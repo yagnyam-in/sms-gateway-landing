@@ -1,0 +1,47 @@
+{
+    "title": "SMS Gateway",
+    "name": "sms-gateway-landing",
+    "version": "0.0.1",
+    "scripts": {
+        "start": "gulp watch"
+    },
+    "description": "SMS Gateway Landing Page.",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template"
+    ],
+    "homepage": "https://www.sg.yagnyam.in",
+    "license": "MIT",
+    "author": "Chenna Reddy",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yagnyam-in/sms-gateway-landing.git"
+    },
+    "engines": {
+        "node": ">=9.0.0"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "5.8.1",
+        "bootstrap": "4.3.1",
+        "jquery": "^3.4.1",
+        "jquery.easing": "^1.4.1",
+        "simple-line-icons": "2.4.1"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.26.7",
+        "del": "4.0.0",
+        "gulp": "4.0.0",
+        "gulp-autoprefixer": "6.0.0",
+        "gulp-clean-css": "4.0.0",
+        "gulp-header": "2.0.7",
+        "gulp-plumber": "^1.2.1",
+        "gulp-rename": "1.4.0",
+        "gulp-sass": "4.0.2",
+        "gulp-uglify": "3.0.2",
+        "merge-stream": "^1.0.1"
+    }
+}
