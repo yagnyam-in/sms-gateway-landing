@@ -1,18 +1,23 @@
-# SMS Gateway Landing Page
+# SMS Gateway
 
-## Usage
+Use your phone as SMS Gateway  
 
-### Local Testing
 
-After installation, run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
+[![Download Android](https://img.shields.io/badge/download-android-blue.svg)](https://dl.sg.yagnyam.in/app)
 
-#### Gulp Tasks
 
-- `gulp` the default task that builds everything
-- `gulp watch` browserSync opens the project in your default browser and live reloads when changes are made
-- `gulp css` compiles SCSS files into CSS and minifies the compiled CSS
-- `gulp js` minifies the themes JS file
-- `gulp vendor` copies dependencies from node_modules to the vendor directory
+## Instructions to Send SMS
 
-You must have npm and Gulp installed globally on your machine in order to use these features.
+App `MyFancyAPP` should be created on Mobile App with access token `1234567890` for this to work.
+   
+```bash
+curl -X POST -H "Content-Type: application/json" -d@- https://sg.yagnyam.in/api <<-EOF
+{
+    "phone": "+911987887891",
+    "message": "Hello from the other side",
+    "appId": "MyFancyAPP",
+    "accessToken": "1234567890"
+}
+EOF
+```
 

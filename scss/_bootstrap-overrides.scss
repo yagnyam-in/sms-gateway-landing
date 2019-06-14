@@ -37,3 +37,22 @@
     font-size: 11px;
     padding: 15px 45px;
 }
+
+.download-btn-outline {
+    color: black;
+    border: 1px solid;
+    border-color: black;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        color: black;
+        border-color: $theme-secondary;
+        background-color: $theme-secondary;
+    }
+}
+
+.download-btn {
+    border-radius: 300px;
+    @include alt-font;
+}
